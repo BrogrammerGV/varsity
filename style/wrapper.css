@@ -1,0 +1,107 @@
+
+    
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+    @import url(https://fonts.googleapis.com/css?family=Raleway:100,300);
+        * {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          outline: 0;
+          box-sizing: border-box;
+        }
+        
+        html, body {
+          height: 100%;
+        }
+        
+        .wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          height: 50%;
+        }
+        .wrapper .item {
+          display: flex;
+          flex-grow: 1;
+          transition: all .5s ease;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: relative;
+          overflow: hidden;
+        }
+        .wrapper .item:hover {
+          flex-grow: 1.0;
+          box-shadow: inset 0 0 300px #000;
+        }
+
+
+        .wrapper .item:after {
+          /* content: "";
+          width: 100%;
+          height: 43.33%;
+          background-color: rgba(0, 0, 0, 0.75);
+          border-radius: 5px;
+          height: 12vh;
+          bottom: -15%;
+          position: absolute;
+      margin-right: -2%;
+      margin-left: 2%;
+          color: #fff;
+          text-align: center;
+          padding-top: 8px;
+          text-transform: uppercase;
+          font-size: 40px;
+          font-family: 'Raleway';
+          font-weight: 100; */
+          font-family: 'Open Sans', Arial, sans-serif;
+          position: absolute;
+          display: inline-block;
+          margin: 40px 8px;
+          width: 95%;
+          color: #000;
+          text-align: left;
+          font-size: 16px;
+          background-color: rgba(0, 0, 0, 0.75);
+          border-radius: 5px;
+          height: 12vh;
+          bottom: -3%;
+          z-index: 999;
+        }
+        .wrapper .item.ryze {
+          background-image: url("img/backgroundCard.png");
+          background-size: cover;
+        }
+        .wrapper .item.ryze:after {
+    
+        }
+
+        .wrapper .item.irelia {
+          background-image: url("http://lolwp.com/wp-content/uploads/Irelia-fanart.jpg");
+          background-position: 45% center;
+        }
+        .wrapper .item.irelia:after {
+          content: "Irelia";
+        }
+        .wrapper .item.jinx {
+          background-image: url("http://lolwp.com/wp-content/uploads/2013/09/Jinx-Classic.jpg");
+          background-position: 70% center;
+        }
+        .wrapper .item.jinx:after {
+          content: "Jinx";
+        }
+        .wrapper .item.katarina {
+          background-image: url("http://lolwp.com/wp-content/uploads/Mercenary-Katarina-Updated.jpg");
+          background-position: 70% center;
+        }
+        .wrapper .item.katarina:after {
+          content: "Katarina";
+        }
+        .wrapper .item.ziggs {
+          background-image: url("http://lolwp.com/wp-content/uploads/Ziggs_Splash_0.jpg");
+          background-position: 75% center;
+        }
+        .wrapper .item.ziggs:after {
+          content: "Ziggs";
+        }
+
